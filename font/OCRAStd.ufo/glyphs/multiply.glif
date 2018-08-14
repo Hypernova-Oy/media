@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="multiply" format="1">
+  <advance width="720"/>
+  <unicode hex="00D7"/>
+  <outline>
+    <contour>
+      <point x="360" y="456" type="line"/>
+      <point x="485" y="581" type="line" smooth="yes"/>
+      <point x="498" y="594"/>
+      <point x="513" y="599"/>
+      <point x="526" y="599" type="curve" smooth="yes"/>
+      <point x="552" y="599"/>
+      <point x="573" y="579"/>
+      <point x="573" y="554" type="curve" smooth="yes"/>
+      <point x="573" y="541"/>
+      <point x="568" y="526"/>
+      <point x="554" y="512" type="curve" smooth="yes"/>
+      <point x="429" y="388" type="line"/>
+      <point x="555" y="263" type="line" smooth="yes"/>
+      <point x="568" y="250"/>
+      <point x="573" y="236"/>
+      <point x="573" y="223" type="curve" smooth="yes"/>
+      <point x="573" y="197"/>
+      <point x="550" y="176"/>
+      <point x="525" y="176" type="curve" smooth="yes"/>
+      <point x="512" y="176"/>
+      <point x="499" y="181"/>
+      <point x="486" y="194" type="curve" smooth="yes"/>
+      <point x="360" y="319" type="line"/>
+      <point x="234" y="194" type="line" smooth="yes"/>
+      <point x="221" y="181"/>
+      <point x="208" y="176"/>
+      <point x="195" y="176" type="curve" smooth="yes"/>
+      <point x="170" y="176"/>
+      <point x="147" y="197"/>
+      <point x="147" y="223" type="curve" smooth="yes"/>
+      <point x="147" y="236"/>
+      <point x="152" y="250"/>
+      <point x="165" y="263" type="curve" smooth="yes"/>
+      <point x="291" y="388" type="line"/>
+      <point x="166" y="512" type="line" smooth="yes"/>
+      <point x="152" y="526"/>
+      <point x="147" y="541"/>
+      <point x="147" y="554" type="curve" smooth="yes"/>
+      <point x="147" y="579"/>
+      <point x="168" y="599"/>
+      <point x="194" y="599" type="curve" smooth="yes"/>
+      <point x="207" y="599"/>
+      <point x="222" y="594"/>
+      <point x="235" y="581" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>579</integer>
+            <key>width</key>
+            <integer>20</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>147</integer>
+            <key>width</key>
+            <integer>426</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

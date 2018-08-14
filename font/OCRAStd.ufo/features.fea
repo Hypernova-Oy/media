@@ -1,0 +1,158 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+
+# GSUB 
+
+
+lookup aaltAccessAllAlternatesinLatinlookup0 {
+  lookupflag 0;
+    sub \quoteright by \quoteright.alt ;
+    sub \comma by \comma.alt ;
+    sub \one by \one.superior ;
+    sub \two by \two.superior ;
+    sub \three by \three.superior ;
+    sub \question by \question.alt ;
+    sub \a by \ordfeminine ;
+    sub \o by \ordmasculine ;
+} aaltAccessAllAlternatesinLatinlookup0;
+
+lookup aaltAccessAllAlternatesinLatinlookup1 {
+  lookupflag 0;
+    sub \hyphen from [\endash \emdash \minus \hyphen.alt ];
+    sub \period from [\ellipsis \period.alt ];
+} aaltAccessAllAlternatesinLatinlookup1;
+
+lookup saltStylisticAlternativesinLatinlookup2 {
+  lookupflag 0;
+    sub \quoteright by \quoteright.alt ;
+    sub \comma by \comma.alt ;
+    sub \hyphen by \hyphen.alt ;
+    sub \period by \period.alt ;
+    sub \question by \question.alt ;
+} saltStylisticAlternativesinLatinlookup2;
+
+lookup fracDiagonalFractionsinLatinlookup3 {
+  lookupflag 0;
+    sub \zero \fraction \zero  by \percent;
+    sub \zero \slash \zero  by \percent;
+    sub \zero \fraction \zero \zero  by \perthousand;
+    sub \zero \slash \zero \zero  by \perthousand;
+    sub \one \fraction \two  by \onehalf;
+    sub \one \slash \two  by \onehalf;
+    sub \one \fraction \four  by \onequarter;
+    sub \one \slash \four  by \onequarter;
+    sub \three \fraction \four  by \threequarters;
+    sub \three \slash \four  by \threequarters;
+} fracDiagonalFractionsinLatinlookup3;
+
+lookup ordnOrdinalsinLatinlookup4 {
+  lookupflag 0;
+    sub \a by \ordfeminine ;
+    sub \o by \ordmasculine ;
+} ordnOrdinalsinLatinlookup4;
+
+lookup supsSuperscriptinLatinlookup5 {
+  lookupflag 0;
+    sub \one by \one.superior ;
+    sub \two by \two.superior ;
+    sub \three by \three.superior ;
+} supsSuperscriptinLatinlookup5;
+
+feature aalt {
+
+ script DFLT;
+     language dflt ;
+      lookup aaltAccessAllAlternatesinLatinlookup0;
+      lookup aaltAccessAllAlternatesinLatinlookup1;
+
+ script latn;
+     language dflt ;
+      lookup aaltAccessAllAlternatesinLatinlookup0;
+      lookup aaltAccessAllAlternatesinLatinlookup1;
+} aalt;
+
+feature salt {
+
+ script DFLT;
+     language dflt ;
+      lookup saltStylisticAlternativesinLatinlookup2;
+
+ script latn;
+     language dflt ;
+      lookup saltStylisticAlternativesinLatinlookup2;
+} salt;
+
+feature frac {
+
+ script DFLT;
+     language dflt ;
+      lookup fracDiagonalFractionsinLatinlookup3;
+
+ script latn;
+     language dflt ;
+      lookup fracDiagonalFractionsinLatinlookup3;
+} frac;
+
+feature ordn {
+
+ script DFLT;
+     language dflt ;
+      lookup ordnOrdinalsinLatinlookup4;
+
+ script latn;
+     language dflt ;
+      lookup ordnOrdinalsinLatinlookup4;
+} ordn;
+
+feature sups {
+
+ script DFLT;
+     language dflt ;
+      lookup supsSuperscriptinLatinlookup5;
+
+ script latn;
+     language dflt ;
+      lookup supsSuperscriptinLatinlookup5;
+} sups;
+
+@GDEF_Simple = [\space \exclam \quotedbl \numbersign \dollar \ampersand 
+	\quoteright \parenleft \parenright \asterisk \plus \comma \hyphen \period \slash 
+	\zero \one \two \three \four \five \six \seven \eight \nine \colon \semicolon \less 
+	\equal \greater \question \at \A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T \U \V \W 
+	\X \Y \Z \bracketleft \backslash \bracketright \asciicircum \underscore 
+	\quoteleft \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z \braceleft 
+	\bar \braceright \asciitilde \exclamdown \cent \sterling \fraction \yen \florin 
+	\section \currency \quotesingle \quotedblleft \guillemotleft \guilsinglleft 
+	\guilsinglright \endash \dagger \daggerdbl \periodcentered \paragraph \bullet 
+	\quotesinglbase \quotedblbase \quotedblright \guillemotright \ellipsis 
+	\questiondown \grave \acute \circumflex \tilde \macron \breve \dotaccent 
+	\dieresis \ring \cedilla \hungarumlaut \ogonek \caron \emdash \AE \ordfeminine 
+	\Lslash \Oslash \OE \ordmasculine \ae \dotlessi \lslash \oslash \oe \germandbls 
+	\logicalnot \mu \trademark \Eth \plusminus \Thorn \divide \brokenbar \degree 
+	\thorn \registered \minus \eth \multiply \copyright \Aacute \Acircumflex 
+	\Adieresis \Agrave \Aring \Atilde \Ccedilla \Eacute \Ecircumflex \Edieresis 
+	\Egrave \Iacute \Icircumflex \Idieresis \Igrave \Ntilde \Oacute \Ocircumflex 
+	\Odieresis \Ograve \Otilde \Scaron \Uacute \Ucircumflex \Udieresis \Ugrave 
+	\Yacute \Ydieresis \Zcaron \aacute \acircumflex \adieresis \agrave \aring 
+	\atilde \ccedilla \eacute \ecircumflex \edieresis \egrave \iacute \icircumflex 
+	\idieresis \igrave \ntilde \oacute \ocircumflex \odieresis \ograve \otilde 
+	\scaron \uacute \ucircumflex \udieresis \ugrave \yacute \ydieresis \zcaron \Euro 
+	\estimated \lozenge \afii61289 \Omega \partialdiff \Delta \product \summation 
+	\radical \infinity \integral \approxequal \notequal \lessequal \greaterequal 
+	\pi \f_i \f_l \one.superior \two.superior \three.superior \comma.alt 
+	\hyphen.alt \period.alt \question.alt \quoteright.alt \uni2440 \uni2441 
+	\uni2442 \erase \grouperase \uni00A0 \uni00AD \uni02C9 \uni2215 \uni2219 ];
+@GDEF_Ligature = [\percent \perthousand \onehalf \onequarter \threequarters ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, , ;
+
+} GDEF;
+
+table BASE {
+  HorizAxis.BaseTagList ideo romn;
+  HorizAxis.BaseScriptList
+	latn romn -163 0;
+} BASE;
+
