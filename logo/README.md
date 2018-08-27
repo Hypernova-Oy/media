@@ -1,5 +1,5 @@
 # Hypernova logo
-![Hypernova logo](hypernova-black-gradient-no-text-1024x1024.png)
+<img src="hypernova-black-gradient-no-text-1024x1024.png" width="256" />
 
 ### Author
 
